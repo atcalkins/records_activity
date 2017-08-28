@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Artist:</strong>
+  <%= @record.artist %>
+</p>
+
+<p>
+  <strong>Album name:</strong>
+  <%= @record.album_name %>
+</p>
+
+<p>
+  <strong>Year released:</strong>
+  <%= @record.year_released %>
+</p>
+
+<p>
+  <strong>Sales:</strong>
+  <%= @record.sales %>
+</p>
+
+<%= link_to 'Edit', edit_record_path(@record) %> |
+<%= link_to 'Back', records_path %>
